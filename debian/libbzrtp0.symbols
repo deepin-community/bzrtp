@@ -1,0 +1,91 @@
+libbzrtp.so.0 libbzrtp0 #MINVER#
+ CRC32LookupTable@Base 1.0.2
+#MISSING: 1.0.6# addMandatoryCryptoTypesIfNeeded@Base 1.0.2
+ bzrtpUtils_getAvailableCryptoTypes@Base 1.0.4
+ bzrtpUtils_getMandatoryCryptoTypes@Base 1.0.4
+ bzrtp_CRC32@Base 1.0.2
+ bzrtp_DestroyKey@Base 1.0.2
+ bzrtp_SASVerified@Base 1.0.2
+ bzrtp_addChannel@Base 1.0.2
+#MISSING: 1.0.6# bzrtp_addCustomDataInCache@Base 1.0.2
+ bzrtp_addMandatoryCryptoTypesIfNeeded@Base 1.0.6
+ bzrtp_base256@Base 1.0.2
+ bzrtp_base32@Base 1.0.2
+ bzrtp_byteToChar@Base 1.0.2
+ bzrtp_cache_getPeerStatus_lock@Base 4.3.0
+ bzrtp_cache_getZuid@Base 1.0.6
+ bzrtp_cache_migration@Base 1.0.6
+ bzrtp_cache_read@Base 1.0.6
+ bzrtp_cache_read_lock@Base 4.3.0
+ bzrtp_cache_write@Base 1.0.6
+ bzrtp_cache_write_active@Base 4.3.0
+ bzrtp_cache_write_lock@Base 4.3.0
+ bzrtp_charToByte@Base 1.0.2
+ bzrtp_computeS0DHMMode@Base 1.0.2
+ bzrtp_computeS0MultiStreamMode@Base 1.0.2
+ bzrtp_createBzrtpContext@Base 1.0.4
+ bzrtp_createZrtpPacket@Base 1.0.2
+ bzrtp_cryptoAlgoAgreement@Base 1.0.6
+ bzrtp_cryptoAlgoTypeIntToString@Base 1.0.6
+ bzrtp_cryptoAlgoTypeStringToInt@Base 1.0.6
+ bzrtp_deriveKeysFromS0@Base 1.0.2
+ bzrtp_deriveSrtpKeysFromS0@Base 1.0.2
+ bzrtp_destroyBzrtpContext@Base 1.0.4
+ bzrtp_exportKey@Base 1.0.6
+ bzrtp_freeZrtpPacket@Base 1.0.2
+ bzrtp_getAuxiliarySharedSecretMismatch@Base 4.3.0
+ bzrtp_getChannelStatus@Base 1.0.4
+ bzrtp_getPeerAssociatedSecrets@Base 1.0.6
+#MISSING: 1.0.6# bzrtp_getPeerAssociatedSecretsHash@Base 1.0.2
+ bzrtp_getSelfHelloHash@Base 1.0.4
+ bzrtp_getSelfZID@Base 1.0.2
+ bzrtp_getSelfZID_lock@Base 4.3.0
+ bzrtp_getSupportedCryptoTypes@Base 1.0.2
+ bzrtp_initBzrtpContext@Base 1.0.4
+ bzrtp_initCache@Base 1.0.6
+ bzrtp_initCache_lock@Base 4.3.0
+ bzrtp_int8ToStr@Base 1.0.2
+ bzrtp_iterate@Base 1.0.2
+ bzrtp_keyDerivationFunction@Base 1.0.2
+ bzrtp_packetBuild@Base 1.0.2
+ bzrtp_packetCheck@Base 1.0.2
+ bzrtp_packetParser@Base 1.0.4
+ bzrtp_packetUpdateSequenceNumber@Base 1.0.2
+ bzrtp_processMessage@Base 1.0.2
+ bzrtp_resetRetransmissionTimer@Base 1.0.2
+ bzrtp_resetSASVerified@Base 1.0.2
+ bzrtp_responseToHelloMessage@Base 1.0.2
+ bzrtp_setAuxiliarySharedSecret@Base 4.3.0
+ bzrtp_setCallbacks@Base 1.0.4
+ bzrtp_setClientData@Base 1.0.2
+ bzrtp_setPeerHelloHash@Base 1.0.4
+ bzrtp_setSupportedCryptoTypes@Base 1.0.2
+ bzrtp_setZIDCache@Base 1.0.6
+#MISSING: 1.0.6# bzrtp_setZIDCacheData@Base 1.0.4
+ bzrtp_setZIDCache_lock@Base 4.3.0
+ bzrtp_startChannelEngine@Base 1.0.4
+ bzrtp_strToUint8@Base 1.0.2
+ bzrtp_turnIntoResponder@Base 1.0.2
+ bzrtp_updateCachedSecrets@Base 1.0.2
+ bzrtp_updateCryptoFunctionPointers@Base 1.0.6
+#MISSING: 1.0.6# bzrtp_writePeerNode@Base 1.0.2
+ computeKeyAgreementPrivateValueLength@Base 1.0.2
+#MISSING: 1.0.6# crypoAlgoAgreement@Base 1.0.2
+#MISSING: 1.0.6# cryptoAlgoTypeIntToString@Base 1.0.2
+#MISSING: 1.0.6# cryptoAlgoTypeStringToInt@Base 1.0.2
+ messageTypeInttoString@Base 1.0.2
+ messageTypeStringtoInt@Base 1.0.2
+ pgpWordsEven@Base 1.0.2
+ pgpWordsOdd@Base 1.0.2
+ selectCommonAlgo@Base 1.0.2
+ state_confirmation_initiatorSendingConfirm2@Base 1.0.2
+ state_confirmation_responderSendingConfirm1@Base 1.0.2
+ state_discovery_init@Base 1.0.2
+ state_discovery_waitingForHello@Base 1.0.2
+ state_discovery_waitingForHelloAck@Base 1.0.2
+ state_keyAgreement_initiatorSendingDHPart2@Base 1.0.2
+ state_keyAgreement_responderSendingDHPart1@Base 1.0.2
+ state_keyAgreement_sendingCommit@Base 1.0.2
+ state_secure@Base 1.0.2
+#MISSING: 1.0.6# updateCryptoFunctionPointers@Base 1.0.2
+ zrtpMessageSetHeader@Base 1.0.2

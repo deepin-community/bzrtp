@@ -1,0 +1,121 @@
+bzrtp (4.4.13-2) unstable; urgency=medium
+
+  * Team upload.
+  * Release to unstable.
+  * Drop Daniel Gnoutcheff from Uploaders
+  * Drop Marc Purcell from Uploaders
+  * Add myself to uploaders
+
+ -- Bernhard Schmidt <berni@debian.org>  Fri, 25 Dec 2020 17:04:16 +0100
+
+bzrtp (4.4.13-1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream version 4.4.13
+  * Change Vcs-* to linphone-stack subgroup
+  * Bump to debhelper-compat (= 12)
+  * Drop obsolete no-upstream-changelog lintian overrides
+
+ -- Bernhard Schmidt <berni@debian.org>  Mon, 07 Dec 2020 10:59:55 +0100
+
+bzrtp (4.4.0-1) experimental; urgency=medium
+
+  * New upstream version 4.4.0
+  * Tighten build-dep on bctoolbox
+
+ -- Bernhard Schmidt <berni@debian.org>  Tue, 01 Sep 2020 00:26:57 +0200
+
+bzrtp (4.3.1-1) experimental; urgency=medium
+
+  * Team upload.
+  * d/watch: Switch to upstream primary Gitlab, only use releases
+  * New upstream version 4.3.1
+  * Bump to debhelper compat 11
+
+ -- Bernhard Schmidt <berni@debian.org>  Tue, 02 Jun 2020 00:05:51 +0200
+
+bzrtp (1.0.6-3) unstable; urgency=medium
+
+  * Team upload.
+  * Workaround FTBFS with GCC-8 (Closes: #897714)
+  * Fix d/watch
+  * Switch Vcs-* to salsa
+
+ -- Bernhard Schmidt <berni@debian.org>  Sun, 22 Jul 2018 22:43:05 +0200
+
+bzrtp (1.0.6-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add libxml2-dev to dependencies of -dev package
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Thu, 16 Nov 2017 22:11:37 +0100
+
+bzrtp (1.0.6-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Daniel Gnoutcheff ]
+  * New upstream release 1.0.5
+  * Drop -dbg package in favor of automatic -dgbsym package.
+  * Update standards-version to 3.8.9 (no changes needed).
+  * Point Vcs-* to git packaging repo
+  * add new build dependency on libbctoolbox-dev
+
+  [ Johannes Schauer ]
+  * Switch from autotools to CMake
+  * Replace build-deps autotools-dev, dh-autoreconf with cmake (>= 3)
+  * debian/rules: Use hardening=+all
+  * bump debhelper compatibility level to 10
+  * run wrap-and-sort -abt
+
+  [ Jonas Smedegaard ]
+  * Tidy copyright info: Wrap license section at 72 chars.
+  * Update copyright info: Relabel license derived from BSD-3-Clause.
+  * Tidy copyright info: Use license section.
+  * Update copyright info: Separate License grants and references
+    from actual licenses.
+  * Suppress arguably bogus lintian warning about shared license not
+    written verbatim but instead referenced in machine-readable form
+    (see bug#786450).
+  * Add copyright-check helper tool.
+  * Add copyright hints, to ease tracking later changes.
+
+  [ Dr. Tobias Quathamer ]
+  * New upstream version 1.0.6
+  * Refresh patches
+  * Use HTTPS URLs
+  * Fix typo in Vcs-Git
+  * Use version 4 for d/watch
+  * Use dh_strip --dbgsym-migration for the obsolete debug package
+  * Update Standards-Version to 4.1.1
+  * Add libsqlite3-dev to Build-Depends
+  * Update symbols file
+  * Remove unneeded lintian override for source package
+  * Update debian/copyright
+  * Update copyright hints file
+  * Add NMUs to d/changelog
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Mon, 06 Nov 2017 20:45:11 +0100
+
+bzrtp (1.0.2-1.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * CVE-2016-6271 (Closes: #859277)
+
+ -- Moritz Muehlenhoff <jmm@debian.org>  Sun, 04 Jun 2017 18:24:14 +0200
+
+bzrtp (1.0.2-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Add support for linking against mbedTLS. (Closes: #808066)
+  * Pass -Wl,--as-needed when building to avoid useless dependencies on
+    libmbedtls and libmbedx509.
+
+ -- James Cowgill <james410@cowgill.org.uk>  Thu, 31 Dec 2015 18:36:30 +0000
+
+bzrtp (1.0.2-1) unstable; urgency=medium
+
+  [ Felix Lechner ]
+  * Initial release (Closes: #785461)
+
+ -- Tzafrir Cohen <tzafrir@debian.org>  Sun, 21 Jun 2015 08:01:29 +0300

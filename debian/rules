@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+# Fix FTBFS with bzrtp 1.0.6 and GCC 8. The upstream fix currently
+# does the same thing, see
+# https://gitlab.linphone.org/BC/public/bzrtp/commit/e86b99fdc51c95f4d4997d7fdcfdfe0d1589ca92
+export DEB_CFLAGS_MAINT_APPEND = -Wno-cast-function-type
+
+%:
+	dh $@ --buildsystem=cmake
+
+# Upstream unconditionally sets CMAKE_INSTALL_RPATH. Make it ineffective by
+# setting CMAKE_SKIP_RPATH
+override_dh_auto_configure:
+	dh_auto_configure -- -DCMAKE_SKIP_RPATH=ON -DENABLE_STATIC=no
+
+override_dh_strip:
+	dh_strip --dbgsym-migration='libbzrtp0-dbg (<< 1.0.6-1~)'

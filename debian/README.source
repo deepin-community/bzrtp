@@ -1,0 +1,9 @@
+New upstream version:
+
+    gbp import-orig --uscan
+
+Symbols check:
+
+    ./debian/rules build
+    fakeroot ./debian/rules binary
+    dpkg-gensymbols -plibbzrtp0 -t -d

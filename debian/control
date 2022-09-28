@@ -1,0 +1,43 @@
+Source: bzrtp
+Priority: optional
+Maintainer: Debian VoIP Team <pkg-voip-maintainers@lists.alioth.debian.org>
+Uploaders: Kilian Krause <kilian@debian.org>,
+           Tzafrir Cohen <tzafrir@debian.org>,
+           Bernhard Schmidt <berni@debian.org>,
+Build-Depends: cmake (>= 3.0),
+               debhelper-compat (= 12),
+               libbctoolbox-dev (>= 4.4.0~),
+               libsqlite3-dev,
+               libxml2-dev,
+Standards-Version: 4.1.1
+Section: libs
+Homepage: https://www.linphone.org/
+Vcs-Git: https://salsa.debian.org/pkg-voip-team/linphone-stack/bzrtp.git
+Vcs-Browser: https://salsa.debian.org/pkg-voip-team/linphone-stack/bzrtp
+
+Package: libbzrtp-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libbzrtp0 (= ${binary:Version}),
+         libxml2-dev,
+         ${misc:Depends},
+Description: Development files for the Bzrtp key exchange library
+ Bzrtp is an open source implementation of the ZRTP key exchange protocol.
+ The library is written in C 89. It is fully portable and can be executed
+ on many platforms including ARM and x86.
+ .
+ This package contains the development files.
+
+Package: libbzrtp0
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends},
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: Library for the ZRTP key exchange protocol
+ Bzrtp is an open source implementation of the ZRTP key exchange protocol.
+ The library is written in C 89. It is fully portable and can be executed
+ on many platforms including ARM and x86.
+ .
+ The library enables encrypted communications in Linphone.
